@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Signature Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Email Signature Generator</h1>
+    <p>
+      Enter the info that applies, click submit and you will recieve an email
+      with a formatted signature that you then can store in your email
+      application, or save the email and copy and past it.
+    </p>
+
+    <!-- FORM START -->
+    <form id="signatureForm">
+      <!-- NAME FIELD -->
+      <label for="fullName">Full Name: </label>
+      <input type="text" id="fullName" name="fullName" /><br />
+      <br />
+      <!-- TITLE FIELD -->
+      <label for="title">Title: </label>
+      <input type="text" id="title" name="title" /><br />
+      <br />
+      <!-- PHONE FIELD -->
+      <label for="phoneNum">Phone Number: </label>
+      <input type="text" id="phoneNum" name="phoneNum" /><br />
+      <br />
+      <!-- EMAIL FIELD -->
+      <label for="emailAddress">Email Address: </label>
+      <input type="email" id="emailAddress" name="emailAddress" /><br />
+      <br />
+      <!-- COMPANY FIELD -->
+      <label for="company">Company: </label>
+      <input type="text" id="company" name="company" /><br />
+      <br />
+      <label for="website">Website: </label>
+      <input type="url" id="website" name="website" /><br />
+      <br />
+      <!-- GENERATE BUTTON -->
+      <button type="button" id="gen">Generate</button>
+    </form>
+    <!-- FORM END -->
+    <hr />
+
+    <!-- SIGNATURE OUTPUT SECTION -->
+    <h3>Preview of Signature</h3>
+    <div id="output"></div>
+    <br />
+
+    <button id="send">Send Email</button>
+    <script src="script.js"></script>
+  </body>
+</html>
